@@ -4,49 +4,356 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Natural Care Spa | Massage in Danville, VA</title>
-  <meta name="description" content="Natural Care Spa in Danville, VA offers professional massage including Deep Tissue, Swedish, Reflexology, and Head/Neck/Shoulder massage. Call (434) 770-7235." />
+  <meta name="description" content="Natural Care Spa in Danville, VA offers professional therapeutic massage: Deep Tissue, Swedish, Reflexology, Head/Neck/Shoulder, and more. Call/Text (434) 770-7235." />
+  <meta name="keywords" content="Danville VA massage, Danville spa, massage spa Danville, deep tissue massage Danville, Swedish massage Danville, reflexology Danville" />
   <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://naturalcarespadanville.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Natural Care Spa | Massage in Danville, VA" />
+  <meta property="og:description" content="Professional therapeutic massage in Danville, VA. Call/Text (434) 770-7235." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://naturalcarespadanville.com/" />
+  <meta property="og:image" content="/assets/hero.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preload" as="image" href="/assets/hero.jpg" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- LocalBusiness Schema (填你的真实地址/营业时间/地图链接后更强) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"HealthAndBeautyBusiness",
+    "name":"Natural Care Spa",
+    "url":"https://naturalcarespadanville.com/",
+    "telephone":"+1-434-770-7235",
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"Danville",
+      "addressRegion":"VA",
+      "postalCode":"24540",
+      "addressCountry":"US"
+    },
+    "areaServed":"Danville, VA",
+    "sameAs":[
+      "https://www.google.com/maps"
+    ]
+  }
+  </script>
 </head>
-<body style="margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;">
-  <header style="padding:56px 20px;text-align:center;background:#111;color:#fff;">
-    <h1 style="margin:0;font-size:40px;letter-spacing:2px;">NATURAL CARE SPA</h1>
-    <p style="margin:16px 0 0;font-size:20px;opacity:.9;">Massage in Danville, VA</p>
-    <p style="margin:10px 0 0;font-size:18px;">Call / Text: <a href="tel:+14347707235" style="color:#fff;text-decoration:underline;">(434) 770-7235</a></p>
-    <div style="margin-top:22px;">
-      <a href="#contact" style="display:inline-block;padding:12px 18px;background:#fff;color:#111;border-radius:10px;text-decoration:none;font-weight:600;">Book / Contact</a>
+
+<body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#top" aria-label="Natural Care Spa home">
+        <span class="brand__mark">N</span>
+        <span class="brand__text">
+          <strong>NATURAL CARE SPA</strong>
+          <small>Massage in Danville, VA</small>
+        </span>
+      </a>
+
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#location">Location</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn--sm btn--ghost" href="#contact">Book / Contact</a>
+      </nav>
+
+      <button class="hamburger" aria-label="Open menu" id="menuBtn">☰</button>
+    </div>
+
+    <div class="mobileNav" id="mobileNav" aria-hidden="true">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#location">Location</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn--sm btn--primary" href="#contact">Book / Contact</a>
     </div>
   </header>
 
-  <main style="max-width:980px;margin:0 auto;padding:26px 20px;">
-    <section>
-      <h2>Services</h2>
-      <ul>
-        <li>Deep Tissue Massage</li>
-        <li>Swedish Massage</li>
-        <li>Reflexology</li>
-        <li>Head, Neck & Shoulder Massage</li>
-        <li>Back Walking Massage</li>
-        <li>Cupping Therapy (optional)</li>
-      </ul>
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__bg" role="img" aria-label="Relaxing spa atmosphere"></div>
+      <div class="container hero__content">
+        <div class="pill">Professional Massage • Danville, VA</div>
+        <h1>Relax. Recover. Feel Better.</h1>
+        <p class="lead">
+          Locally owned massage spa offering therapeutic sessions for relaxation, pain relief, and total body wellness.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#contact">Book / Contact</a>
+          <a class="btn btn--ghost" href="tel:+14347707235">Call (434) 770-7235</a>
+          <a class="btn btn--ghost" href="sms:+14347707235">Text Us</a>
+        </div>
+
+        <div class="hero__trust">
+          <div class="trustCard">
+            <div class="trustTitle">Popular Services</div>
+            <div class="trustText">Deep Tissue • Swedish • Reflexology • Head/Neck/Shoulder</div>
+          </div>
+          <div class="trustCard">
+            <div class="trustTitle">By Appointment</div>
+            <div class="trustText">Flexible scheduling • Clean & calm environment</div>
+          </div>
+          <div class="trustCard">
+            <div class="trustTitle">Easy Directions</div>
+            <div class="trustText">Tap “Get Directions” below for Google Maps</div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2>Why choose us</h2>
-      <p>Locally owned massage spa offering professional therapeutic massage in a calm, clean, and welcoming environment. We focus on relaxation, pain relief, and total body wellness.</p>
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__head">
+          <h2>Massage & Spa Services</h2>
+          <p>Choose a session based on your needs—relaxation, recovery, or targeted relief.</p>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Deep Tissue Massage</h3>
+            <p>Target deep muscle tension, knots, and chronic tightness.</p>
+          </article>
+          <article class="card">
+            <h3>Swedish Massage</h3>
+            <p>Classic relaxation massage to reduce stress and improve circulation.</p>
+          </article>
+          <article class="card">
+            <h3>Head, Neck & Shoulder</h3>
+            <p>Perfect for desk work fatigue, headaches, and upper-back tightness.</p>
+          </article>
+          <article class="card">
+            <h3>Reflexology</h3>
+            <p>Focused foot/hand work to support relaxation and overall balance.</p>
+          </article>
+          <article class="card">
+            <h3>Back Walking Massage</h3>
+            <p>Deeper pressure technique for those who prefer strong compression.</p>
+          </article>
+          <article class="card">
+            <h3>Add-ons (Optional)</h3>
+            <p>Cupping • Scalp treatment • Mini facial • Eye steaming • More.</p>
+          </article>
+        </div>
+
+        <div class="note">
+          <strong>Tip:</strong> For best results, tell us what hurts (neck/shoulder/low back) and your preferred pressure level.
+        </div>
+      </div>
     </section>
 
-    <section id="contact" style="padding:18px 0;border-top:1px solid #eee;margin-top:18px;">
-      <h2>Contact</h2>
-      <p><b>Phone:</b> <a href="tel:+14347707235">(434) 770-7235</a></p>
-      <p><b>Address:</b> Danville, VA 24540 (update with your full address)</p>
-      <p><b>Hours:</b> By appointment</p>
-      <p style="opacity:.8;font-size:14px;">Tip: Add your Google Business Profile link here once ready.</p>
+    <!-- PRICING -->
+    <section class="section section--alt" id="pricing">
+      <div class="container">
+        <div class="section__head">
+          <h2>Simple Pricing</h2>
+          <p>Clear options. Pay in person. Ask about packages if you visit regularly.</p>
+        </div>
+
+        <div class="pricing">
+          <div class="priceCard">
+            <div class="priceTop">
+              <h3>60 Minutes</h3>
+              <div class="price">$—</div>
+            </div>
+            <ul>
+              <li>Full body or targeted areas</li>
+              <li>Relaxation or therapeutic focus</li>
+              <li>Best for first visit</li>
+            </ul>
+            <a class="btn btn--primary btn--block" href="#contact">Book 60 min</a>
+          </div>
+
+          <div class="priceCard priceCard--featured">
+            <div class="badge">Most Popular</div>
+            <div class="priceTop">
+              <h3>90 Minutes</h3>
+              <div class="price">$—</div>
+            </div>
+            <ul>
+              <li>More time for problem areas</li>
+              <li>Great for deep tissue</li>
+              <li>Neck/shoulder + back + legs</li>
+            </ul>
+            <a class="btn btn--primary btn--block" href="#contact">Book 90 min</a>
+          </div>
+
+          <div class="priceCard">
+            <div class="priceTop">
+              <h3>30 Minutes</h3>
+              <div class="price">$—</div>
+            </div>
+            <ul>
+              <li>Quick relief</li>
+              <li>Neck/shoulder or back only</li>
+              <li>Ideal for busy schedule</li>
+            </ul>
+            <a class="btn btn--primary btn--block" href="#contact">Book 30 min</a>
+          </div>
+        </div>
+
+        <p class="small center">
+          Replace “$—” with your real prices (recommended). Google & customers both prefer transparent pricing.
+        </p>
+      </div>
+    </section>
+
+    <!-- LOCATION -->
+    <section class="section" id="location">
+      <div class="container">
+        <div class="section__head">
+          <h2>Location</h2>
+          <p>Danville, VA • Easy navigation with Google Maps.</p>
+        </div>
+
+        <div class="split">
+          <div class="card">
+            <h3>Natural Care Spa</h3>
+            <p class="muted">
+              <strong>Address:</strong> <span id="addr">Danville, VA 24540</span><br />
+              <strong>Hours:</strong> By appointment<br />
+              <strong>Phone:</strong> <a href="tel:+14347707235">(434) 770-7235</a> •
+              <a href="sms:+14347707235">Text</a>
+            </p>
+
+            <!-- TODO: 用你的真实地址/Google Maps short link 替换下面 -->
+            <div class="btnRow">
+              <a class="btn btn--primary" id="dirBtn" target="_blank" rel="noopener"
+                 href="https://www.google.com/maps/search/?api=1&query=Natural+Care+Spa+Danville+VA">
+                Get Directions
+              </a>
+              <a class="btn btn--ghost" target="_blank" rel="noopener"
+                 href="https://www.google.com/search?q=Natural+Care+Spa+Danville+VA">
+                View on Google
+              </a>
+            </div>
+
+            <div class="small">
+              <strong>Parking:</strong> Please arrive a few minutes early. Call/text if you need help finding us.
+            </div>
+          </div>
+
+          <div class="mapWrap">
+            <iframe
+              title="Map"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=Danville%2C%20VA&output=embed">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <div class="section__head">
+          <h2>Book / Contact</h2>
+          <p>Fastest: call or text. If you prefer, send a message below.</p>
+        </div>
+
+        <div class="contactGrid">
+          <div class="card">
+            <h3>Call / Text</h3>
+            <p class="muted">
+              <a class="bigLink" href="tel:+14347707235">(434) 770-7235</a><br />
+              <a class="bigLink" href="sms:+14347707235">Send a text message</a>
+            </p>
+            <div class="small">
+              When texting, include: your name • preferred time • service • duration.
+            </div>
+          </div>
+
+          <form class="card form" action="https://formsubmit.co/your-email@example.com" method="POST">
+            <h3>Message Us</h3>
+
+            <!-- FormSubmit: replace email above; optional spam protection -->
+            <input type="hidden" name="_subject" value="New message from Natural Care Spa website" />
+            <input type="hidden" name="_captcha" value="false" />
+            <!-- <input type="hidden" name="_next" value="https://naturalcarespadanville.com/thanks.html" /> -->
+
+            <label>
+              Name
+              <input name="name" required placeholder="Your name" />
+            </label>
+
+            <label>
+              Phone (optional)
+              <input name="phone" placeholder="(xxx) xxx-xxxx" />
+            </label>
+
+            <label>
+              Message
+              <textarea name="message" rows="5" required placeholder="What service and what time works for you?"></textarea>
+            </label>
+
+            <button class="btn btn--primary btn--block" type="submit">Send Message</button>
+            <p class="small muted">
+              Tip: Replace the form email with yours. Or remove this form and only keep call/text.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section__head">
+          <h2>FAQ</h2>
+          <p>Quick answers clients often ask.</p>
+        </div>
+
+        <div class="faq">
+          <details class="card">
+            <summary>Do I need an appointment?</summary>
+            <p>Yes—please call or text to schedule. This helps ensure availability and a quiet experience.</p>
+          </details>
+
+          <details class="card">
+            <summary>What pressure level do you offer?</summary>
+            <p>From light relaxation to strong deep tissue. Tell us your preference and any sensitive areas.</p>
+          </details>
+
+          <details class="card">
+            <summary>How should I prepare?</summary>
+            <p>Arrive a few minutes early, stay hydrated, and let us know about injuries or medical concerns.</p>
+          </details>
+
+          <details class="card">
+            <summary>Do you accept walk-ins?</summary>
+            <p>Availability varies. The fastest way is to call/text first.</p>
+          </details>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer style="padding:18px 20px;text-align:center;background:#fafafa;color:#555;">
-    © <span id="y"></span> Natural Care Spa · Danville, VA
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <strong>Natural Care Spa</strong><br />
+        <span class="muted">Massage in Danville, VA</span>
+      </div>
+      <div class="footer__links">
+        <a href="tel:+14347707235">Call</a>
+        <a href="sms:+14347707235">Text</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="muted small">© <span id="year"></span> Natural Care Spa. All rights reserved.</div>
+    </div>
   </footer>
-  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+
+  <script src="script.js"></script>
 </body>
 </html>
