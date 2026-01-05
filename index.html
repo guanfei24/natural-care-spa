@@ -1,142 +1,309 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Natural Care Spa | Professional Massage in Danville, VA</title>
+    <title>Natural Care Spa | 专业理疗按摩</title>
     <link rel="stylesheet" href="styles.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <header class="topbar">
-      <nav class="container nav__content">
-        <a href="#" class="nav__logo">Natural Care Spa</a>
-        <ul class="nav__links">
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+    <header class="navbar">
+      <nav class="container nav-content">
+        <a href="#" class="logo">Natural Care <span>Spa</span></a>
+        <ul class="nav-links">
+          <li><a href="#services">服务项目</a></li>
+          <li><a href="#about">关于我们</a></li>
+          <li><a href="#contact">联系预约</a></li>
         </ul>
-        <a href="tel:+14347707235" class="nav__cta">Call Now</a>
+        <a href="tel:+14347707235" class="nav-btn">立即通话</a>
       </nav>
     </header>
 
     <main>
       <section class="hero">
         <div
-          class="hero__bg"
+          class="hero-image"
+          data-parallax
           style="
-            background-image: url('https://image.pollinations.ai/prompt/bright%20modern%20spa%20room%20white%20towels%20green%20plants%20natural%20sunlight%20soft%20bokeh%20clean%20atmosphere%2016:9');
+            background-image: url('https://image.pollinations.ai/prompt/bright%20modern%20spa%20interior%20white%20towels%20bamboo%20natural%20lighting%20serene%2016:9');
           "
         ></div>
-        <div class="hero__content container">
-          <h1>Professional Therapeutic Massage</h1>
-          <p>
-            Providing a sanctuary for healing and relaxation in Danville, VA.
-          </p>
-          <div class="hero__btns">
-            <a href="tel:+14347707235" class="btn btn--primary"
-              >Call (434) 770-7235</a
-            >
-            <a href="sms:+14347707235" class="btn btn--secondary">Text Us</a>
+        <div class="hero-content container">
+          <div class="hero-text-box" data-animate>
+            <h1>专业理疗按摩服务</h1>
+            <p>
+              在宁静的环境中，通过专业的按摩手法舒缓压力，找回身心的平衡。我们专注于深层组织理疗与全身放松。
+            </p>
+            <div class="hero-actions">
+              <a href="tel:+14347707235" class="btn btn-primary"
+                >拨打电话预约</a
+              >
+              <a href="sms:+14347707235" class="btn btn-outline"
+                >发送短信咨询</a
+              >
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="services" class="section container">
-        <h2 class="section__title">Our Services</h2>
-        <div class="services-grid">
-          <div class="service-card" data-animate>
-            <img
-              src="https://image.pollinations.ai/prompt/massage%20therapy%20hands%20on%20back%20with%20oils%20bright%20lighting"
-              alt="Deep Tissue"
-            />
-            <h3>Deep Tissue Massage</h3>
-            <p>
-              Focused pressure on specific areas to release chronic muscle
-              tension and knots.
-            </p>
-          </div>
-          <div class="service-card" data-animate>
-            <img
-              src="https://image.pollinations.ai/prompt/relaxing%20swedish%20massage%20with%20towels%20clean%20setting"
-              alt="Swedish Massage"
-            />
-            <h3>Swedish Massage</h3>
-            <p>
-              Long, gliding strokes to improve circulation and promote overall
-              relaxation.
-            </p>
-          </div>
-          <div class="service-card" data-animate>
-            <img
-              src="https://image.pollinations.ai/prompt/reflexology%20foot%20massage%20spa%20setting%20bright"
-              alt="Reflexology"
-            />
-            <h3>Reflexology</h3>
-            <p>
-              Pressure point therapy on feet and hands to restore energy flow
-              throughout the body.
-            </p>
+      <section id="services" class="section services">
+        <div class="container">
+          <h2 class="section-title" data-animate>我们的服务</h2>
+          <div class="services-grid">
+            <div class="service-card" data-animate>
+              <div
+                class="service-img"
+                style="
+                  background-image: url('https://image.pollinations.ai/prompt/professional%20deep%20tissue%20massage%20close%20up%20bright%20clean');
+                "
+              ></div>
+              <div class="service-info">
+                <h3>深层组织按摩</h3>
+                <p>
+                  针对长期肌肉紧张和结节，通过精准的力量触达深层肌群，缓解慢性疼痛。
+                </p>
+              </div>
+            </div>
+
+            <div class="service-card" data-animate>
+              <div
+                class="service-img"
+                style="
+                  background-image: url('https://image.pollinations.ai/prompt/swedish%20massage%20with%20oils%20bright%20spa%20setting');
+                "
+              ></div>
+              <div class="service-info">
+                <h3>瑞典式放松按摩</h3>
+                <p>
+                  经典的轻柔手法，促进血液循环，减轻压力，非常适合初次尝试按摩的客人。
+                </p>
+              </div>
+            </div>
+
+            <div class="service-card" data-animate>
+              <div
+                class="service-img"
+                style="
+                  background-image: url('https://image.pollinations.ai/prompt/reflexology%20treatment%20spa%20foot%20massage');
+                "
+              ></div>
+              <div class="service-info">
+                <h3>足底反射疗法</h3>
+                <p>
+                  通过刺激足部特定反射区，调节身体机能，缓解疲劳并改善睡眠质量。
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <section id="about" class="section about">
-        <div class="container about__inner">
-          <div class="about__text" data-animate>
-            <h2>Welcome to Natural Care Spa</h2>
-            <p>
-              At Natural Care Spa, we are committed to providing professional
-              massage therapy in a clean, quiet, and welcoming environment.
-            </p>
-            <p>
-              Our experienced therapists tailor each session to your individual
-              needs, whether you're seeking relief from pain or simply a moment
-              of peace.
-            </p>
-          </div>
+        <div class="container about-flex">
           <div
-            class="about__img"
+            class="about-image"
+            data-animate
             style="
-              background-image: url('https://image.pollinations.ai/prompt/spa%20reception%20desk%20modern%20clean%20white%20and%20light%20wood');
+              background-image: url('https://image.pollinations.ai/prompt/clean%20zen%20spa%20decoration%20stones%20and%20green%20plant');
             "
           ></div>
+          <div class="about-text" data-animate>
+            <span class="subtitle">Welcome to Our Sanctuary</span>
+            <h2>经验丰富的理疗团队</h2>
+            <p>
+              Natural Care Spa
+              致力于为社区提供高质量的按摩服务。我们的环境干净、私密且充满禅意。
+            </p>
+            <p>
+              每一位理疗师都经过严格培训，能够根据您的身体状况量身定制按摩方案。无论您是寻求运动损伤康复，还是单纯的减压放松，我们都能满足您的需求。
+            </p>
+          </div>
         </div>
       </section>
 
-      <section id="contact" class="section contact container">
-        <div class="contact-box" data-animate>
-          <h2>Visit Us</h2>
-          <p>
-            Ready to book your appointment? Give us a call or send a text
-            message.
-          </p>
-          <div class="contact-info">
-            <div class="info-item">
-              <strong>Phone & Text</strong>
-              <a href="tel:+14347707235">(434) 770-7235</a>
+      <section id="contact" class="section contact">
+        <div class="container">
+          <div class="contact-card" data-animate>
+            <h2>现在就开启您的放松之旅</h2>
+            <p>
+              为了保证服务质量，我们建议您提前预约。您可以直接致电或发送短信。
+            </p>
+
+            <div class="contact-details">
+              <div class="detail-item">
+                <small>预约热线</small>
+                <a href="tel:+14347707235">(434) 770-7235</a>
+              </div>
+              <div class="detail-item">
+                <small>门店地址</small>
+                <span>Danville, VA 24541</span>
+              </div>
+              <div class="detail-item">
+                <small>营业时间</small>
+                <span>周一至周日: 9:00 AM - 9:00 PM</span>
+              </div>
             </div>
-            <div class="info-item">
-              <strong>Location</strong>
-              <span>Danville, VA</span>
+
+            <div class="contact-cta">
+              <a href="tel:+14347707235" class="btn btn-primary"
+                >拨打电话预约</a
+              >
             </div>
-          </div>
-          <div class="contact-hours">
-            <strong>Hours:</strong>
-            <p>Monday - Sunday: 9:00 AM - 9:00 PM</p>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="container">
-        <p>
-          &copy; <span id="year"></span> Natural Care Spa. All rights reserved.
-        </p>
+    <!-- ✅ Footer：2列（Hours / Contact）+ 小icon社交 -->
+    <footer class="site-footer" id="footer">
+      <div class="container footer-surface">
+        <div class="footer-grid-2">
+          <!-- Left: Hours -->
+          <section class="footer-col">
+            <h3 class="footer-title">Hours</h3>
+            <div class="hours-list">
+              <div class="hours-row">
+                <div class="day">Sunday</div>
+                <div class="time">9:00 AM – 9:00 PM</div>
+              </div>
+              <div class="hours-row">
+                <div class="day">Monday</div>
+                <div class="time">9:00 AM – 9:00 PM</div>
+              </div>
+              <div class="hours-row">
+                <div class="day">Tuesday</div>
+                <div class="time">9:00 AM – 9:00 PM</div>
+              </div>
+              <div class="hours-row">
+                <div class="day">Wednesday</div>
+                <div class="time">9:00 AM – 9:00 PM</div>
+              </div>
+              <div class="hours-row">
+                <div class="day">Thursday</div>
+                <div class="time">9:00 AM – 9:00 PM</div>
+              </div>
+              <div class="hours-row">
+                <div class="day">Friday</div>
+                <div class="time">9:00 AM – 9:00 PM</div>
+              </div>
+              <div class="hours-row">
+                <div class="day">Saturday</div>
+                <div class="time">9:00 AM – 9:00 PM</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Right: Contact -->
+          <section class="footer-col footer-contact">
+            <h3 class="footer-title">Contact</h3>
+
+            <div class="footer-map">
+              <iframe
+                title="Natural Care Spa Map"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps?q=Danville%20VA%2024541&output=embed"
+              ></iframe>
+            </div>
+
+            <div class="footer-contact-row">
+              <span class="pin">📍</span>
+
+              <a
+                class="footer-address"
+                href="https://www.google.com/maps?q=Danville%20VA%2024541"
+                target="_blank"
+                rel="noopener"
+              >
+                <span>Danville, VA 24541</span>
+              </a>
+
+              <a
+                class="footer-phone"
+                href="tel:+14347707235"
+                aria-label="Call us"
+              >
+                <span class="phone-ic">📞</span>
+                <span>(434) 770-7235</span>
+              </a>
+
+              <!-- ✅ 小icon社交（把 href 换成你的真实链接） -->
+              <div class="footer-social" aria-label="Social links">
+                <a
+                  class="social-ic"
+                  href="#"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Facebook"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="18"
+                    height="18"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M9 8h3V6a3 3 0 0 1 3-3h2v3h-2a1 1 0 0 0-1 1v2h3l-1 3h-2v9h-3v-9H9V8z"
+                    ></path>
+                  </svg>
+                </a>
+
+                <a
+                  class="social-ic"
+                  href="#"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Instagram"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="18"
+                    height="18"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                    <path d="M16 11.37a4 4 0 1 1-7.88 1.26"></path>
+                    <path d="M17.5 6.5h.01"></path>
+                  </svg>
+                </a>
+
+                <a
+                  class="social-ic"
+                  href="#"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Google Business Profile"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="18"
+                    height="18"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M12 3a9 9 0 1 0 9 9"></path>
+                    <path d="M21 3v6h-6"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p>© <span id="year"></span> Natural Care Spa. 版权所有。</p>
+        </div>
       </div>
     </footer>
 
